@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control</title>
+</head>
+<body>
+    <style>
+.box {
+    width: 80px;
+    height: 80px;
+    background: orange;
+    margin: 10px;
+    transition: transform 1s;
+}
+
+.linear { transition-timing-function: linear; }
+.ease { transition-timing-function: ease; }
+.ease-in { transition-timing-function: ease-in; }
+.ease-out { transition-timing-function: ease-out; }
+.ease-in-out { transition-timing-function: ease-in-out; }
+
+.box:hover {
+    transform: translateX(200px);
+}
+</style>
+
+<div class="box linear">linear</div>
+<div class="box ease">ease</div>
+<div class="box ease-in">ease-in</div>
+<div class="box ease-out">ease-out</div>
+<div class="box ease-in-out">ease-in-out</div>
+
+</body>
+</html>

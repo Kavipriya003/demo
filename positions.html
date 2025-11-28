@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed and Sticky Example</title>
+</head>
+<body>
+
+     <style>
+        body {
+            height: 2000px;
+            font-family: Arial;
+        }
+
+        .fixed-box {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: red;
+            padding: 10px;
+            color: white;
+            border: 2px solid;
+        }
+        
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background: lightgreen;
+            padding: 10px;
+            border: 2px solid green;
+            margin-top: 100px;
+        }
+
+        .content {
+            margin-top: 150px;
+            padding: 20px;
+        }
+@media(min-width:700px) {
+    .fixed-box{
+        display:none;
+    }
+
+    .sticky-box{
+        display:none;
+    }
+    
+}
+
+    </style>
+
+     <div class="fixed-box">
+        I am FIXED (always stays on screen)
+    </div>
+
+    <div class="sticky-box">
+        I am STICKY (stick when scrolled to top)
+    </div>
+
+    <div class="content">
+        Scroll down to see sticky effect...
+        <br><br><br><br><br><br><br><br><br><br>
+        More content...
+        <br><br><br><br><br><br><br><br><br><br>
+        Even more content...
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<body>
+    <h2>Relative & Absolute Position Example</h2>
+<!-- Parent container -->
+<div style="
+    position: relative; 
+    width: 300px; 
+    height: 200px; 
+    background:cyan;  
+    padding: 15px;
+    border: 2px solid;
+    ">
+
+    <!-- Relative positioned box -->
+    <div style="
+        position: relative; 
+        top: 20px; 
+        left: 10px; 
+        background: yellow; 
+        padding: 5px; 
+        border: 1px solid;
+    ">
+        I am RELATIVE (moved from original place)
+    </div>
+
+    <!-- Absolute positioned box -->
+    <div style="
+        position: absolute; 
+        top: 40px; 
+        right: 10px; 
+        background: lightgreen; 
+        padding: 5px; 
+        border: 1px solid;
+    ">
+        I am ABSOLUTE (inside parent)
+    </div>
+
+</div>
+</body>
+</html>
